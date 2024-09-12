@@ -1,0 +1,14 @@
+.LogoApple{
+    margin:auto; 
+    display: flex;
+    
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    margin:auto;
+    display: flex;
+}
