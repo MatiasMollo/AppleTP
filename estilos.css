@@ -1,14 +1,121 @@
-.LogoApple{
-    margin:auto; 
-    display: flex;
-    
-    
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', Times, serif;
 }
+
 body{
     display: flex;
     flex-direction: column;
 }
+
+.LogoApple{
+    margin:2em auto; 
+    display: flex;
+}
+
 .titulo{
     margin:auto;
     display: flex;
+}
+.navbar{
+    margin:2em auto 3em;
+    text-align: center;
+    display: flex;
+    position: sticky;
+    top:1em;
+    padding: 0 1em;
+
+    background-color:rgb(219, 162, 71);
+    color:#fff;
+    border-radius:0.5em;
+}
+.navbar ul{
+    list-style: none;
+    margin:auto;
+}
+.navbar ul li {
+    margin:0.5em;
+    transition-duration: 0.2s;
+}
+.navbar ul li:hover{
+    transform:translateY(-5px)
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+section{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.section-title{
+    margin:1em auto 2em;
+}
+
+.iphone_16_img{
+    width:100%;
+}
+
+.iphones_article{
+    flex-direction: column;
+}
+
+.iphones_img{
+    width:50%;
+    margin:0 auto;
+    height:50%;
+}
+
+@media screen and (min-width:1000px){
+    .iphones_article{
+        flex-direction: row;
+    }
+    .reversed{
+        flex-direction: row-reverse;
+    }
+    .iphones_text{
+        margin: auto;
+        font-size:20px;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width:1500px){
+    section{
+        width:70%;
+    }
+    .iphones_img{
+        width:40%;
+    }
+}
+
+@media screen and (min-width:1800px){
+    .iphones_img{
+        width:30%;
+    }
+}
+
+
+
+/* Clases genéricas (inspiradas en bootstrap)*/
+.mx-auto{
+    margin:auto;
+}
+.text-center{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
 }

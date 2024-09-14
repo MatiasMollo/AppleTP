@@ -7,99 +7,66 @@
     <title>Apple</title>
 </head>
 <body>
-    <h1 id="INICIO" >Apple</h1>
-    <img src="apple-logo.png" alt="Logo de Apple" width="150" class="LogoApple">
-    <ul>
-        <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#iPhone">iPhone</a></li>
-        <li><a href="#MacBooks">MacBooks</a></li>
-        <li><a href="#iPad">iPad</a></li>
-        <li><a href="#Watch">Watch</a></li>
-        <li><a href="#AirPods">AirPods</a></li>
-        <li><a href="#Nuevo">Nuevos Lanzamientos</a></li>
-        <li><a href="#Contacto">Contacto</a></li>
+    <header id="inicio" class="d-flex flex-column">
+        <img src="img/apple_logo.png" alt="Logo de Apple" width="150" class="LogoApple">
+        <h1 class="mx-auto">Apple Products</h1>
+    </header>
+    <!-- Para que el Navbar sticky funcione, debe estar fuera del header -->
+    <nav class="navbar">
+        <ul class="d-flex">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#iphone">iPhones</a></li>
+            <li><a href="#MacBooks">MacBooks</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
 
-    </ul>
+    <section class="iphones" id="iphone">
+        <h2 class="text-center">iPhones</h2>
 
-    <h2 id="iPhone">iPhone</h2>
-    <img src="iphone.webp.png" alt="iPHONE" width="150" class="titulo">
-    <p>¡Bienvenidos a la presentación de la gama completa de <strong>iPhones</strong>, donde la innovación y la tecnología<br> se encuentran para ofrecerte una experiencia móvil inigualable! Cada modelo de iPhone está<br> diseñado para satisfacer una variedad de necesidades y preferencias, brindándote opciones que van<br> desde la última tecnología hasta el equilibrio perfecto entre rendimiento y valor. Descubre qué hace<br> especial a cada iPhone y encuentra el modelo ideal para ti.</p>
-    <img src="apple-logo.png" alt="iPhone 15 pro Max" width="20"><strong>iPhone 15 Pro Max</strong><br>
-    <p>El <strong>iPhone 15 Pro Max</strong>  representa la máxima expresión de la tecnología móvil. Equipado con el nuevo<br> chip A17 Pro, ofrece un rendimiento extremadamente rápido y eficiente, ideal para usuarios<br> exigentes que requieren la mejor experiencia en gaming, edición de video 4K y aplicaciones<br> profesionales. Su pantalla Super Retina XDR de 6.7 pulgadas proporciona colores vibrantes y un<br> contraste excepcional, mientras que el diseño de titanio garantiza durabilidad y ligereza. La cámara<br> triple con sensores avanzados y capacidades mejoradas de fotografía computacional permite<br> capturar imágenes y videos con una calidad sin igual, incluso en condiciones de baja luz. La<br> tecnología ProMotion y el soporte para el nuevo Apple Pencil (si está disponible) amplían aún más<br> sus capacidades creativas.</p>
-    <img src="apple-logo.png" alt="iPhone 15 Pro" width="20"><strong>iPhone 15 Pro</strong><br>
-    <p>El <strong>iPhone 15 Pro</strong> combina potencia y portabilidad en un diseño elegante. Con el chip A17 Pro, este<br> modelo ofrece un rendimiento impresionante y una experiencia de usuario fluida. Su pantalla Super<br> Retina XDR de 6.1 pulgadas ofrece una visualización vibrante y nítida. La configuración de cámara<br> triple, similar a la del 15 Pro Max, asegura una calidad fotográfica superior, mientras que su diseño<br> de titanio proporciona robustez y ligereza. Es ideal para aquellos que desean un dispositivo de alto<br> rendimiento en un tamaño más compacto.</p>
-    <img src="apple-logo.png" alt="iPhone 15 Plus" width="20"><strong>iPhone 15 Plus</strong><br>
-    <p>El <strong>iPhone 15 Plus</strong> ofrece una pantalla grande de 6.7 pulgadas con la tecnología Super Retina XDR,<br> perfecta para quienes disfrutan de una experiencia visual inmersiva. Equipado con el chip A16 Bionic,<br> combina potencia y eficiencia para un rendimiento excepcional en aplicaciones diarias y<br> entretenimiento multimedia. La cámara dual mejora la captura de fotos y videos, y su diseño de<br>  aluminio proporciona durabilidad y un peso equilibrado. Este modelo es ideal para quienes buscan<br> una pantalla grande y un rendimiento sólido sin necesidad de las características más avanzadas.</p>
-    <img src="apple-logo.png" alt="iPhone 15 " width="20"><strong>iPhone 15</strong><br>
-    <p>El <strong>iPhone 15 </strong> es la opción versátil y accesible dentro de la gama más reciente. Con el chip A16 Bionic,<br> ofrece un rendimiento rápido y eficiente para todas tus necesidades diarias. Su pantalla Super Retina<br> XDR de 6.1 pulgadas proporciona una visualización clara y vibrante. La cámara dual mejora la calidad<br> de tus fotos y videos, y su diseño de vidrio y aluminio combina elegancia con durabilidad. Es<br> perfecto para quienes buscan un iPhone moderno con tecnología avanzada a un precio más<br> accesible.</p>
+        <p class="section-title">¡Bienvenidos a la presentación de la gama completa de <strong>iPhones</strong>, donde la innovación y la tecnología se encuentran para ofrecerte una experiencia móvil inigualable!</p>
+        
+        <article class="d-flex iphones_article">
+            <img src="img/iphone15promax.jpg" alt="iPhone 15 pro Max" class="iphones_img">
+            <p class="iphones_text">El <strong>iPhone 15 Pro Max</strong>  representa la máxima expresión de la tecnología móvil. Equipado con el nuevo chip A17 Pro, ofrece un rendimiento extremadamente rápido y eficiente, ideal para usuarios exigentes que requieren la mejor experiencia en gaming, edición de video 4K y aplicaciones profesionales. Su pantalla Super Retina XDR de 6.7 pulgadas proporciona colores vibrantes y un contraste excepcional, mientras que el diseño de titanio garantiza durabilidad y ligereza. La cámara triple con sensores avanzados y capacidades mejoradas de fotografía computacional permite capturar imágenes y videos con una calidad sin igual, incluso en condiciones de baja luz. La tecnología ProMotion y el soporte para el nuevo Apple Pencil (si está disponible) amplían aún más sus capacidades creativas.</p>
+        </article>
+
+        <article class="d-flex iphones_article reversed">
+            <img src="img/iphone15pro.webp" alt="iPhone 15 Pro" class="iphones_img">
+            <p class="iphones_text">El <strong>iPhone 15 Pro</strong> combina potencia y portabilidad en un diseño elegante. Con el chip A17 Pro, este modelo ofrece un rendimiento impresionante y una experiencia de usuario fluida. Su pantalla Super Retina XDR de 6.1 pulgadas ofrece una visualización vibrante y nítida. La configuración de cámara triple, similar a la del 15 Pro Max, asegura una calidad fotográfica superior, mientras que su diseño de titanio proporciona robustez y ligereza. Es ideal para aquellos que desean un dispositivo de alto rendimiento en un tamaño más compacto.</p>
+        </article>
+
+        <article class="d-flex iphones_article">
+            <img src="img/iphone15plus.webp" alt="iPhone 15 Plus" class="iphones_img">
+            <p class="iphones_text">El <strong>iPhone 15 Plus</strong> ofrece una pantalla grande de 6.7 pulgadas con la tecnología Super Retina XDR, perfecta para quienes disfrutan de una experiencia visual inmersiva. Equipado con el chip A16 Bionic, combina potencia y eficiencia para un rendimiento excepcional en aplicaciones diarias y entretenimiento multimedia. La cámara dual mejora la captura de fotos y videos, y su diseño de  aluminio proporciona durabilidad y un peso equilibrado. Este modelo es ideal para quienes buscan una pantalla grande y un rendimiento sólido sin necesidad de las características más avanzadas.</p>
+        </article>
+
+        <article class="d-flex iphones_article reversed">
+            <img src="img/iphone15.jfif" alt="iPhone 15" class="iphones_img">
+            <p class="iphones_text">El <strong>iPhone 15 </strong> es la opción versátil y accesible dentro de la gama más reciente. Con el chip A16 Bionic, ofrece un rendimiento rápido y eficiente para todas tus necesidades diarias. Su pantalla Super Retina XDR de 6.1 pulgadas proporciona una visualización clara y vibrante. La cámara dual mejora la calidad de tus fotos y videos, y su diseño de vidrio y aluminio combina elegancia con durabilidad. Es perfecto para quienes buscan un iPhone moderno con tecnología avanzada a un precio más accesible.</p>
+        </article>
+    </section>
 
 
-    <img src="apple-logo.png" alt="MacBook" width="20"><strong>Porque elegirlo..</strong><br>
-    <p> Cada modelo de la gama de <strong>iPhone</strong> está diseñado para ofrecerte lo mejor en tecnología móvil,<br> adaptándose a tus necesidades individuales y presupuesto. Desde el poder y la versatilidad de la<br> serie Pro hasta la accesibilidad del iPhone SE, Apple tiene el iPhone perfecto para ti. Explora las<br> opciones y elige el dispositivo que te acompañará en tu vida diaria con la tecnología más avanzada y<br> la experiencia de usuario más fluida.</p>
+    <img src="apple-logo.png" alt="MacBook" width="20"><strong>Porque elegirlo..</strong>
+    <p> Cada modelo de la gama de <strong>iPhone</strong> está diseñado para ofrecerte lo mejor en tecnología móvil, adaptándose a tus necesidades individuales y presupuesto. Desde el poder y la versatilidad de la serie Pro hasta la accesibilidad del iPhone SE, Apple tiene el iPhone perfecto para ti. Explora las opciones y elige el dispositivo que te acompañará en tu vida diaria con la tecnología más avanzada y la experiencia de usuario más fluida.</p>
     <img src="smartphone.png" alt="iPhone" width="20"><a href="https://www.apple.com/la/iphone/">iPhone</a>
 
     <hr>
     
     <h2 id="MacBooks">MacBooks</h2>
     <img src="macbook.jpg" alt="MacBook " width="150">
-    <p>¡Bienvenidos a la presentación de la gama completa de <strong>MacBooks</strong>, donde la potencia, el diseño y la<br> innovación se encuentran para ofrecerte una experiencia informática superior! Cada MacBook está<br> diseñado para satisfacer una amplia gama de necesidades, desde tareas básicas hasta proyectos<br> profesionales avanzados. Descubre cuál de nuestros modelos es el ideal para ti y cómo cada uno se<br> destaca en su categoría.</p>
-    <img src="apple-logo.png" alt="MacBook" width="20"><strong>MacBook Pro</strong><br>
-    <p>El <strong>MacBook Pro</strong>  es la elección definitiva para profesionales que requieren un rendimiento sin<br> compromisos. Equipado con los últimos chips M2 Pro o M2 Max, el MacBook Pro  ofrece una<br> potencia de procesamiento y gráficos excepcionales, ideal para tareas exigentes como edición de<br> video, diseño gráfico y desarrollo de software. Su pantalla Liquid Retina XDR proporciona una<br> calidad de imagen impresionante con colores vivos y un rango dinámico extendido, mientras que la<br> batería de larga duración asegura productividad continua. Disponibles en tamaños de 14 y 16<br> pulgadas, los modelos Pro combinan rendimiento extremo con un diseño robusto y elegante.</p>
-    <img src="apple-logo.png" alt="MacBook" width="20"><strong>MacBook Air</strong><br>
-    <p>El <strong>MacBook Air</strong> es el equilibrio perfecto entre portabilidad y potencia. Con el chip M2, el MacBook<br>Air ofrece un rendimiento rápido y eficiente en un diseño ultradelgado. Su pantalla Retina brillante y<br> sus altavoces de alta calidad hacen que sea ideal para trabajo y entretenimiento en movimiento. La<br> duración prolongada de la batería te permite trabajar durante todo el día sin necesidad de recargar,<br> mientras que su diseño ligero hace que sea fácil de llevar a todas partes. Es perfecto para<br> estudiantes, profesionales en movimiento y usuarios que buscan una máquina potente y liviana.</p>
-    <img src="apple-logo.png" alt="MacBook" width="20"><strong>Porque elegirlo..</strong><br>
-    <p>Cada <strong>MacBook</strong> está diseñado para ofrecerte una experiencia informática única, adaptándose a tus<br> necesidades específicas y estilo de vida. Desde el poder y la versatilidad del MacBook Pro hasta la<br> ligereza y portabilidad del MacBook Air, Apple tiene la MacBook perfecta para ti. Explora nuestras<br> opciones y elige el MacBook que mejor se ajuste a tus requerimientos, y lleva tu productividad y<br> creatividad al siguiente nivel con la última tecnología de Apple.</p>
+    <p>¡Bienvenidos a la presentación de la gama completa de <strong>MacBooks</strong>, donde la potencia, el diseño y la innovación se encuentran para ofrecerte una experiencia informática superior! Cada MacBook está diseñado para satisfacer una amplia gama de necesidades, desde tareas básicas hasta proyectos profesionales avanzados. Descubre cuál de nuestros modelos es el ideal para ti y cómo cada uno se destaca en su categoría.</p>
+    <img src="apple-logo.png" alt="MacBook" width="20"><strong>MacBook Pro</strong>
+    <p>El <strong>MacBook Pro</strong>  es la elección definitiva para profesionales que requieren un rendimiento sin compromisos. Equipado con los últimos chips M2 Pro o M2 Max, el MacBook Pro  ofrece una potencia de procesamiento y gráficos excepcionales, ideal para tareas exigentes como edición de video, diseño gráfico y desarrollo de software. Su pantalla Liquid Retina XDR proporciona una calidad de imagen impresionante con colores vivos y un rango dinámico extendido, mientras que la batería de larga duración asegura productividad continua. Disponibles en tamaños de 14 y 16 pulgadas, los modelos Pro combinan rendimiento extremo con un diseño robusto y elegante.</p>
+    <img src="apple-logo.png" alt="MacBook" width="20"><strong>MacBook Air</strong>
+    <p>El <strong>MacBook Air</strong> es el equilibrio perfecto entre portabilidad y potencia. Con el chip M2, el MacBookAir ofrece un rendimiento rápido y eficiente en un diseño ultradelgado. Su pantalla Retina brillante y sus altavoces de alta calidad hacen que sea ideal para trabajo y entretenimiento en movimiento. La duración prolongada de la batería te permite trabajar durante todo el día sin necesidad de recargar, mientras que su diseño ligero hace que sea fácil de llevar a todas partes. Es perfecto para estudiantes, profesionales en movimiento y usuarios que buscan una máquina potente y liviana.</p>
+    <img src="apple-logo.png" alt="MacBook" width="20"><strong>Porque elegirlo..</strong>
+    <p>Cada <strong>MacBook</strong> está diseñado para ofrecerte una experiencia informática única, adaptándose a tus necesidades específicas y estilo de vida. Desde el poder y la versatilidad del MacBook Pro hasta la ligereza y portabilidad del MacBook Air, Apple tiene la MacBook perfecta para ti. Explora nuestras opciones y elige el MacBook que mejor se ajuste a tus requerimientos, y lleva tu productividad y creatividad al siguiente nivel con la última tecnología de Apple.</p>
     <img src="computer.png" alt="iPhone" width="20"><a href="https://www.apple.com/la/mac/">MacBook</a>
     <hr>
 
-    <h2 id="iPad">iPad</h2>
-    <img src="ipad.jpeg" alt="iPad " width="150">
-    <p>¡Bienvenidos a la presentación de la gama completa de <strong>iPads</strong> , donde la innovación, la potencia y la<br> versatilidad se combinan para ofrecerte una experiencia inigualable en tabletas! Cada modelo de<br> iPad está diseñado para satisfacer una amplia gama de necesidades, desde tareas diarias hasta<br> proyectos creativos avanzados. Descubre cuál de nuestros iPads es el perfecto para ti y cómo cada<br> uno se destaca en su categoría.</p>
-    <img src="apple-logo.png" alt="iPad Pro" width="20"><strong>iPad Pro</strong><br>
-    <p>El <strong>iPad Pro</strong> es la opción definitiva para aquellos que buscan el máximo rendimiento y versatilidad en<br> una tableta. Equipado con el potente chip M2, el iPad Pro ofrece una velocidad y capacidad gráfica<br> excepcionales, ideales para profesionales que realizan tareas complejas como edición de video 4K,<br> diseño gráfico avanzado y modelado 3D. Su pantalla Liquid Retina XDR proporciona una calidad de<br> imagen impresionante con colores vibrantes y un rango dinámico extendido, mientras que la<br> compatibilidad con el Apple Pencil (2ª generación) y el Magic Keyboard transforma el iPad Pro en<br> una potente estación de trabajo. Disponible en tamaños de 11 y 12.9 pulgadas, es perfecto para<br> quienes requieren lo último en tecnología y rendimiento.</p>
-    <img src="apple-logo.png" alt="iPad Air" width="20"><strong>iPad Air</strong><br>
-    <p>El <strong>iPad Air</strong>  combina potencia y portabilidad en un diseño elegante. Con el chip M2, el iPad Air ofrece <br> un rendimiento rápido y eficiente en un formato delgado y ligero. Su pantalla Liquid Retina <br> proporciona una experiencia visual nítida y colorida, mientras que la compatibilidad con el Apple<br> Pencil (2ª generación) y el Magic Keyboard permite una experiencia de escritura y diseño fluida. Este<br> modelo es ideal para estudiantes, profesionales y creativos que buscan un dispositivo potente y<br>  versátil sin comprometer la portabilidad.</p>
-    <img src="apple-logo.png" alt="iPad (10ª Generación)" width="20"><strong>iPad (10ª Generación)</strong><br>
-    <p>El <strong>iPad (10ª Generación) </strong> es la opción perfecta para quienes buscan un equilibrio entre rendimiento y<br> valor. Equipado con el chip A14 Bionic, este iPad ofrece una experiencia rápida y eficiente para tareas<br> diarias, navegación web y aplicaciones multimedia. Su pantalla Retina de 10.9 pulgadas proporciona<br> una visualización clara y brillante, mientras que la compatibilidad con el Apple Pencil (1ª generación)<br> y el teclado inteligente amplía su funcionalidad. Es ideal para usuarios que desean un iPad confiable<br> y accesible para el uso diario.</p>
-    <img src="apple-logo.png" alt="iPad Mini" width="20"><strong>iPad Mini</strong><br>
-    <p>El <strong> iPad Mini</strong> es el modelo más compacto y portátil de la gama, ideal para quienes buscan un<br> dispositivo potente en un formato pequeño. Equipado con el chip A15 Bionic, el iPad Mini ofrece un<br> rendimiento rápido en un diseño ultradelgado. Su pantalla Liquid Retina de 8.3 pulgadas<br> proporciona una experiencia visual impresionante en un tamaño compacto, mientras que la<br> compatibilidad con el Apple Pencil (2ª generación) hace que sea perfecto para tomar notas, dibujar y<br> leer. Es ideal para quienes necesitan un iPad potente y fácil de llevar a todas partes.</p>
-    <img src="apple-logo.png" alt="iPad" width="20"><strong>Porque elegirlo..</strong><br>
-    <p>Cada <strong>iPad</strong>  está diseñado para ofrecerte una experiencia única, adaptándose a tus necesidades<br> específicas y estilo de vida. Desde el poder y la versatilidad del iPad Pro hasta la portabilidad del iPad Mini,<br> Apple tiene el iPad perfecto para ti. Explora nuestras opciones y elige el iPad que mejor se<br> ajuste a tus requerimientos, y lleva tu creatividad, productividad y entretenimiento al siguiente nivel<br> con la última tecnología de Apple.</p>
-    <img src="ipad.jpeg" alt="iPad" width="20"><a href=" https://www.apple.com/la/ipad/">iPad</a>
-    <hr>
-
-    <h2 id="Watch">Watch</h2>
-    <img src="watch.webp" alt="watch" width="150">
-    <p>¡Bienvenidos a la presentación de la gama completa de <strong>Apple Watch</strong> , donde la tecnología de<br> vanguardia se encuentra con la funcionalidad y el diseño sofisticado! Cada modelo de Apple Watch<br> está diseñado para ofrecerte una experiencia única en el seguimiento de la salud, el monitoreo del<br> estado físico y la conectividad. Descubre cuál de nuestros modelos es el ideal para ti y cómo cada<br> uno se destaca en su categoría.</p>
-    <img src="apple-logo.png" alt="Apple Watch Series 9" width="20"><strong>Apple Watch Series 9</strong><br>
-    <p>El <strong>Apple Watch Series 9 </strong> es la última incorporación a la serie, ofreciendo un rendimiento mejorado<br> con el nuevo chip S9 SiP. Este modelo incluye una pantalla Retina Always-On más brillante, con un<br> rendimiento fluido y rápido. La Series 9 también presenta avanzadas capacidades de monitoreo de<br> salud, como la medición de oxígeno en sangre y el electrocardiograma (ECG), así como un nuevo<br> sensor de temperatura para un seguimiento más preciso del ciclo menstrual. Con mejoras en la<br> batería y una resistencia mejorada al agua, el Apple Watch Series 9 es ideal para quienes buscan el<br> máximo en tecnología y funcionalidad.</p>
-    <img src="apple-logo.png" alt="Apple Watch Ultra" width="20"><strong>Apple Watch Ultra</strong><br>
-    <p>El <strong>Apple Watch Ultra </strong> está diseñado para los aventureros y atletas extremos. Equipado con un diseño<br> robusto y una pantalla más grande de 49 mm, el Ultra ofrece una durabilidad excepcional con<br> certificación de resistencia a condiciones extremas, como temperaturas frías y calor intenso. Con<br> características avanzadas como el GPS de doble frecuencia, la brújula y un altímetro siempre activo,<br> este modelo es perfecto para exploradores, corredores y deportistas que necesitan un reloj fiable en<br> los entornos más exigentes. Su batería de larga duración soporta hasta 36 horas de uso y hasta 60<br> horas en modo de bajo consumo.</p>
-    <img src="apple-logo.png" alt="Apple Watch SE (2ª generación)" width="20"><strong>Apple Watch SE (2ª generación)</strong><br>
-    <p>El <strong>Apple Watch SE (2ª generación)</strong>  ofrece una experiencia de Apple Watch a un precio más<br> accesible, sin sacrificar las características esenciales. Equipado con el chip S8 SiP, proporciona un<br> rendimiento rápido y fluido con un diseño elegante y duradero. Incluye funciones clave como el<br> seguimiento de actividad física, notificaciones de salud, y un diseño resistente al agua. Con la misma<br> pantalla Retina brillante y muchas de las funciones de los modelos más caros, el Apple Watch SE es<br> ideal para quienes buscan un equilibrio entre calidad y precio.</p>
-    <img src="apple-logo.png" alt="Apple Watch Series 8" width="20"><strong>Apple Watch Series 8</strong><br>
-    <p>El <strong>Apple Watch Series 8 </strong> combina un diseño elegante con funciones avanzadas de monitoreo de<br> salud y bienestar. Equipado con el chip S8 SiP, ofrece un rendimiento rápido y una pantalla Retina<br> Always-On que facilita la visualización de datos en cualquier momento. Incluye sensores avanzados<br> para el monitoreo de la salud, como el seguimiento de la temperatura corporal y la detección de<br> caídas. Su batería dura hasta 18 horas y ofrece carga rápida, ideal para quienes buscan un reloj<br> inteligente que se adapte a su estilo de vida activo.</p>
-    <img src="apple-logo.png" alt="watch" width="20"><strong>Porque elegirlo..</strong><br>
-    <p>Cada modelo de <strong>Apple Watch</strong>  está diseñado para ofrecerte una experiencia única, adaptándose a tus<br> necesidades y estilo de vida. Desde la tecnología avanzada del Apple Watch Series 9 hasta la<br> durabilidad del Apple Watch Ultra, Apple tiene el Apple Watch perfecto para ti. Explora nuestras<br> opciones y elige el modelo que mejor se ajuste a tus necesidades, y lleva tu salud, actividad y<br> conectividad al siguiente nivel con la innovación de Apple.</p>
-    <img src="watch.webp" alt="watch" width="20"><a href=" https://www.apple.com/la/watch/">Watch</a>
-    <hr>
-
-    <h2 id="AirPods">AirPods</h2>
-    <img src="airpods.webp" alt="AirPods" width="150">
-    <p>¡Bienvenidos a la presentación de la gama completa de <strong>AirPods</strong> , donde la excelencia en audio se une<br> con la comodidad y el diseño innovador! Cada modelo de AirPods está diseñado para ofrecerte una<br> experiencia auditiva excepcional, adaptándose a tus preferencias y necesidades diarias. Descubre<br> cuál de nuestros AirPods es el ideal para ti y cómo cada uno se destaca en su categoría.</p>
-    <img src="apple-logo.png" alt="AirPods Pro (2ª generación)" width="20"><strong>AirPods Pro (2ª generación)</strong><br>
-    <p>Los <strong>AirPods Pro (2ª generación)</strong>  son la cúspide de la tecnología de audio inalámbrico de Apple.<br> Equipados con el nuevo chip H2, ofrecen un sonido de alta fidelidad y una cancelación activa de<br> ruido avanzada, que te sumerge en un mundo de audio sin distracciones. El nuevo modo de<br> transparencia mejorado te permite escuchar tu entorno con claridad cuando lo necesitas. Su diseño<br> in-ear con puntas de silicona en tres tamaños garantiza un ajuste personalizado y cómodo. Además,<br> la resistencia al agua y al sudor hace que sean ideales para cualquier actividad. Con hasta 6 horas de<br> reproducción con una sola carga y hasta 30 horas con el estuche de carga MagSafe, los AirPods Pro<br> (2ª generación) son perfectos para quienes buscan la mejor experiencia en audio y comodidad.</p>
-    <img src="apple-logo.png" alt="AirPods (3ª generación)" width="20"><strong>AirPods (3ª generación)</strong>
-    <p>Los <strong>AirPods (3ª generación)</strong>  combinan la clásica experiencia de los AirPods con mejoras<br> significativas en audio y diseño. Equipados con el chip H1, ofrecen un sonido mejorado con soporte<br> para audio espacial y ecualización adaptativa. Su diseño ergonómico se adapta cómodamente a tu<br> oído, y el estuche de carga MagSafe permite una carga rápida y conveniente. Con hasta 6 horas de<br> reproducción y hasta 30 horas con el estuche de carga, los AirPods (3ª generación) son ideales para<br> quienes desean una excelente calidad de sonido y facilidad de uso en un formato cómodo.</p>
-    <img src="apple-logo.png" alt="AirPods (2ª generación)" width="20"><strong>AirPods (2ª generación)</strong>
-    <p>Los <strong>AirPods (2ª generación)</strong>  son la opción confiable y accesible dentro de la gama de AirPods.<br> Equipados con el chip H1, ofrecen una conexión rápida y estable con tus dispositivos Apple y una<br> calidad de sonido clara y envolvente. Su diseño ligero y cómodo es perfecto para el uso diario, y el<br> estuche de carga proporciona hasta 24 horas de batería total. Son ideales para quienes buscan la<br> icónica experiencia de los AirPods con un precio más accesible y funcionalidad esencial.</p>
-    <img src="apple-logo.png" alt="AirPods Max" width="20"><strong>AirPods Max</strong>
-    <p>Los <strong>AirPods Max</strong> están diseñados para quienes buscan la máxima calidad de sonido en auriculares<br> sobre la oreja. Equipados con el chip H1 en cada auricular, ofrecen audio de alta fidelidad con una<br> cancelación activa de ruido líder en la industria y un modo de transparencia excepcional. Su diseño<br> de lujo incluye almohadillas de memoria de espuma y una diadema ajustable para un ajuste cómodo<br> y personalizado. Con hasta 20 horas de reproducción con la cancelación activa de ruido y el audio<br> espacial activados, los AirPods Max son perfectos para audiófilos y entusiastas del sonido que<br> buscan una experiencia de audio inmersiva y de alta calidad.</p>
-    <img src="apple-logo.png" alt="AirPods" width="20"><strong>Porque elegirlo..</strong><br>
-    <p>Cada modelo de <strong>AirPods</strong>  está diseñado para ofrecerte una experiencia auditiva única, adaptándose a<br> tus preferencias y necesidades. Desde la calidad premium de los AirPods Max hasta la accesibilidad y<br> comodidad de los AirPods (2ª generación), Apple tiene el AirPods perfecto para ti. Explora nuestras<br> opciones y elige el modelo que mejor se ajuste a tu estilo de vida, y disfruta de la última tecnología<br> en audio con la calidad y la innovación de Apple.</p>
-    <img src="airpods (3).png" alt="AirPods" width="20"><a href=" https://www.apple.com/la/airpods/">Watch</a>
-    <hr>
     <h3 id="Contacto">SEGUINOS EN REDES</h3>
     <ul>
         <li> <img src="facebook.png" alt="Facebook" width="20"><a href=" https://www.facebook.com/apple">Facebook</a></li>
