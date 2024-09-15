@@ -8,6 +8,23 @@
     font-family: 'Roboto', Times, serif;
 }
 
+
+/* Clases genéricas (inspiradas en bootstrap)*/
+.mx-auto{
+    margin:auto;
+}
+.text-center{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+/*Fin clases genéricas*/
+
 body{
     display: flex;
     flex-direction: column;
@@ -30,7 +47,7 @@ body{
     top:1em;
     padding: 0 1em;
 
-    background-color:rgb(219, 162, 71);
+    background-color:#187795;
     color:#fff;
     border-radius:0.5em;
 }
@@ -65,22 +82,75 @@ section{
     width:100%;
 }
 
-.iphones_article{
+.iphones_article, .macbooks-article{
     flex-direction: column;
 }
 
-.iphones_img{
+.macbooks_section{
+    margin: 2em auto;
+}
+
+.iphones_img, .macbooks_img{
     width:50%;
     margin:0 auto;
     height:50%;
 }
+.macbooks_img{
+    width:70%;
+    margin:1em auto;
+}
+.macbook_generic{
+    border-radius: 0.5em;
+    width:100%
+}
+
+
+footer{
+    background-color:#38686A;
+    color:#fff;
+    padding: 2em;
+    
+}
+.redes{
+    list-style: none;
+}
+footer h2{
+    font-size: 36px;
+}
+.redes li{
+    margin:1em auto;
+    display: flex;
+    align-items: center;
+}
+.icons {
+    color:#fff;
+    width: 24px;
+    margin:auto 0.5em
+}
+.redes li a{
+    color:#fff;
+    text-decoration: none;
+}
+.divContacto{
+    width: 95%;
+    margin:auto;
+}
 
 @media screen and (min-width:1000px){
-    .iphones_article{
+    .iphones_article, .macbooks-article{
         flex-direction: row;
+    }
+    .macbooks_img{
+        width:50%;
+    }
+    .macbook_generic{
+        margin:auto 2em auto 0
     }
     .reversed{
         flex-direction: row-reverse;
+    }
+    .section-title{
+        font-size: 20px;
     }
     .iphones_text{
         margin: auto;
@@ -89,9 +159,13 @@ section{
     }
 }
 
+
 @media screen and (min-width:1500px){
-    section{
+    section, .divContacto{
         width:70%;
+    }
+    .divContacto{
+        margin:auto
     }
     .iphones_img{
         width:40%;
@@ -104,18 +178,3 @@ section{
     }
 }
 
-
-
-/* Clases genéricas (inspiradas en bootstrap)*/
-.mx-auto{
-    margin:auto;
-}
-.text-center{
-    text-align: center;
-}
-.d-flex{
-    display: flex;
-}
-.flex-column{
-    flex-direction: column;
-}
