@@ -16,6 +16,12 @@
 .text-center{
     text-align: center;
 }
+.d-none{
+    display:none;
+}
+.d-block{
+    display: block;
+}
 .d-flex{
     display: flex;
 }
@@ -144,6 +150,39 @@ footer h2{
 .divContacto{
     width: 95%;
     margin:auto;
+}
+.popup{
+    background-color:#fff;
+    width:90%;
+    border:2px solid #30acff;
+    box-shadow: 0 0 10px #30acff;
+    border-radius: 0.5em;
+    position:fixed;
+    margin:auto;
+    height: fit-content;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    padding: 2em 2em 1.5em;
+}
+.popup img{
+    width:80%;
+    display:flex;
+    margin:auto
+}
+.popup button{
+    background-color: transparent;
+    border:none;
+    outline:none;
+    text-decoration: underline;
+    margin:1em auto 0;
+    display:flex;
+    cursor:pointer;
+    font-size:16px;
+}
+.popup-trigger{
+    cursor:pointer;
 }
 
 @media screen and (min-width:1000px){
