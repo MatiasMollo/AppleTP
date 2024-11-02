@@ -32,9 +32,13 @@
 
 /*Fin clases genéricas*/
 
-body{
+body, main{
     display: flex;
     flex-direction: column;
+}
+
+.blur{
+    filter:blur(4px);
 }
 
 .LogoApple{
@@ -165,24 +169,74 @@ footer h2{
     bottom:0;
     top:0;
     padding: 2em 2em 1.5em;
+    z-index: 9;
+    max-height: 80vh;
 }
 .popup img{
     width:80%;
     display:flex;
     margin:auto
 }
+
 .popup button{
     background-color: transparent;
     border:none;
+    cursor:pointer;
     outline:none;
+}
+
+.popup .backButton{
     text-decoration: underline;
     margin:1em auto 0;
     display:flex;
-    cursor:pointer;
-    font-size:16px;
+    font-size:20px;
 }
 .popup-trigger{
     cursor:pointer;
+}
+
+.leftButton, .rightButton{
+    display: block;
+    position:absolute;
+    z-index: 9;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:auto;
+    right:auto;
+    height:16px;
+    width:16px
+}
+
+.leftButton{
+    left:2em;
+}
+.rightButton{
+    right:2em;
+}
+
+.popup svg{
+    width:16px;
+}
+
+@media screen and (min-width:600px){
+    .popup{
+        width:70%;
+    }
+    .popup img{
+        width:70%;
+    }
+}
+
+@media screen and (min-width:900px){
+    .popup{
+        width:70%;
+    }
+    .popup img{
+        width:auto;
+        max-width:60%;
+        max-height: 60vh;
+    }
 }
 
 @media screen and (min-width:1000px){
