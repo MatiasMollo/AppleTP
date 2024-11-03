@@ -41,6 +41,25 @@ body, main{
     filter:blur(4px);
 }
 
+.dark{
+    color:#fff;
+    background-color:#333;
+}
+
+.theme{
+    display: block;
+    position:absolute;
+    width:40px;
+    height:40px;
+    margin:auto;
+    left:auto;
+    right:1em;
+    top:1em;
+    border:none;
+    background: transparent;
+    cursor:pointer;
+}
+
 .LogoApple{
     margin:2em auto; 
     display: flex;
@@ -115,6 +134,9 @@ section{
     width:50%;
     margin:0 auto;
     height:50%;
+}
+.iphones_img{
+    margin-bottom:0.5em;
 }
 .macbooks_img{
     width:70%;
@@ -219,6 +241,10 @@ footer h2{
     width:16px;
 }
 
+.image{
+    border-radius: 0.5em;
+}
+
 @media screen and (min-width:600px){
     .popup{
         width:70%;
@@ -245,6 +271,10 @@ footer h2{
     }
     .macbooks_img{
         width:50%;
+        margin:2em 1.5em;
+    }
+    .iphones_img{
+        margin:auto 1.5em
     }
     .macbook_generic{
         margin:auto 2em auto 0

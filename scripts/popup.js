@@ -15,7 +15,6 @@ let rightButton = popup.querySelector('.rightButton');
 let images = document.querySelectorAll('.image')
 
 
-
 //*Listeners 
 
 //En un bucle, le asignamos un escuchador a cada trigger
@@ -38,7 +37,6 @@ main.addEventListener('click',function(event){
 })
 
 
-
 //* Funciones
 
 /**
@@ -53,8 +51,6 @@ function getImageData(next = false){
         if (images[index].src == popupImage.src) currentIndex = index
         index++;
     }
-
-    console.log(currentIndex)
 
     if(next){
         currentIndex++;
