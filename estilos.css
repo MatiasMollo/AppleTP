@@ -28,7 +28,13 @@
 .flex-column{
     flex-direction: column;
 }
+.small{
+    font-size:small
+}
 
+html{
+    scroll-behavior: smooth;
+}
 
 /*Fin clases genéricas*/
 
@@ -119,14 +125,14 @@ section{
     margin: 1em auto 0.5em;
     font-size:36px;
 }
-.iphones_container, .macbooks_container, .macbooks-generic-div{
+.iphones_container, .macbooks_container{
     flex-direction:column
 }
-.iphones_article, .macbooks-article{
+.iphones_article, .macbooks_article{
     flex-direction: column;
 }
 
-.macbooks_section{
+.macbooks{
     margin: 2em auto;
 }
 
@@ -181,7 +187,7 @@ footer h2{
     background-color:#fff;
     width:90%;
     border:2px solid #30acff;
-    box-shadow: 0 0 10px #30acff;
+    box-shadow: 0 0 40px 5px #30acff;
     border-radius: 0.5em;
     position:fixed;
     margin:auto;
@@ -266,7 +272,7 @@ footer h2{
 }
 
 @media screen and (min-width:1000px){
-    .iphones_container, .macbooks_container, .macbooks-generic-div{
+    .iphones_container, .macbooks_container{
         flex-direction:row
     }
     .macbooks_img{
@@ -277,12 +283,12 @@ footer h2{
         margin:auto 1.5em
     }
     .macbook_generic{
-        margin:auto 2em auto 0
+        margin:auto auto 1em
     }
     .reversed{
         flex-direction: row-reverse;
     }
-    .iphones_text{
+    .iphones_text, .macbooks_text{
         margin: auto;
         font-size:20px;
         text-align: justify;

@@ -91,4 +91,3 @@ function openModal(){
     popup.classList.add('d-block')
     main.classList.add('blur')
 }
-
